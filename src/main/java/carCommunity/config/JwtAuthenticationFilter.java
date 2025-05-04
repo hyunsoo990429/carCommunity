@@ -34,7 +34,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
-        // 요청에서 JWT 토큰 추출
+        // 요청에서 JWT 토큰 추출 dfd
         String token = resolveToken(request);
 
         // 토큰이 존재하고 유효한 경우 인증 처리
